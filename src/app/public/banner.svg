@@ -1,0 +1,35 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <radialGradient id="bg">
+            <stop offset="0%" stop-color="#273456"></stop>
+            <stop offset="100%" stop-color="#080b16"></stop>
+        </radialGradient>
+
+        <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#f8df91"></stop>
+            <stop offset="100%" stop-color="#a87920"></stop>
+        </linearGradient>
+    </defs>
+
+    <rect width="800" height="600" rx="40" fill="url(#bg)"></rect>
+
+    <circle cx="400" cy="300" r="220" fill="none" stroke="#8f6b28" stroke-width="2" opacity=".35"></circle>
+    <circle cx="400" cy="300" r="170" fill="none" stroke="#f8df91" stroke-width="1" opacity=".25"></circle>
+
+    <path d="M280 150 L400 420 L520 150" fill="none" stroke="url(#gold)" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"></path>
+
+    <circle cx="400" cy="280" r="18" fill="#f8df91"></circle>
+
+    <g fill="#f8df91">
+        <circle cx="150" cy="120" r="3"></circle>
+        <circle cx="640" cy="150" r="4"></circle>
+        <circle cx="190" cy="420" r="3"></circle>
+        <circle cx="650" cy="430" r="3"></circle>
+        <circle cx="120" cy="300" r="2"></circle>
+        <circle cx="690" cy="300" r="2"></circle>
+    </g>
+
+    <text x="400" y="520" text-anchor="middle" fill="#f8df91" font-size="38" font-family="Georgia, serif" font-weight="bold">
+        WIZARDDEX
+    </text>
+</svg>
