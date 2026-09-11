@@ -1,11 +1,13 @@
-import { fileURLToPath } from 'node:url';
-
-/** @type {import('next').NextConfig} */
+{import('next').NextConfig}
 const nextConfig = {
-  reactCompiler: true,
-  turbopack: {
-    root: fileURLToPath(new URL('.', import.meta.url)),
-  },
+    images: {
+        remotePatterns: [
+            {
+                protocol: "https",
+                hostname: "**",
+            },
+        ],
+    },
 };
 
 export default nextConfig;
