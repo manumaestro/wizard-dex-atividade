@@ -1,14 +1,15 @@
 "use client";
 
-import { ToastContainer} from "react-toastify";
-import  "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
-    export default function ToastProvider() {
-        return (
-            <ToastContainer
-            position="bottom-rigth"
-            autoCloser={2500}
+export default function ToastProvider() {
+    return (
+        <ToastContainer
+            position="bottom-right"
+            autoClose={2500}
             theme="dark"
-            />
-        )
-    }
+        />
+    );
+}
+

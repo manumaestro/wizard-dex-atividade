@@ -7,7 +7,7 @@ export default function Navbar() {
             <div className="nav-container">
             <Link href="/" className="nav-logo">
                 <Image
-                    src="logo.png"
+                    src="/logo.svg"
                     alt="WizardDex"
                     width={55}
                     height={55}

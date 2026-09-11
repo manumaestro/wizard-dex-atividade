@@ -27,12 +27,12 @@ export default function Sobre() {
 
                         <div>
                             <span>Turma</span>
-                            <strong>COLOQUE SUA TURMA</strong>
+                            <strong>2TDS1</strong>
                         </div>
 
                         <div>
                             <span>Professores</span>
-                            <strong>COLOQUE OS PROFESSORES</strong>
+                            <strong> Marcelo e Thiago</strong>
                         </div>
                     </div>
                 </div>
@@ -43,9 +43,8 @@ export default function Sobre() {
                 <h2>Integrantes do grupo</h2>
 
                 <ul className="members-list">
-                    <li>Nome completo do integrante 1</li>
-                    <li>Nome completo do integrante 2</li>
-                    <li>Nome completo do integrante 3</li>
+                    <li>Manuela Maestro</li>
+                    <li>Maria Eduarda Braga Ferreira</li>
                 </ul>
                 </div>
 

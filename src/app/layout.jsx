@@ -1,6 +1,6 @@
 import './globals.css';
 import Navbar from "../components/Navbar";
-import ToastProvider from "components/ToastProvider";
+import ToastProvider from "../components/ToastProvider";
 
 export const metadata = {
     title: 'FrontEnd - Codeverse',

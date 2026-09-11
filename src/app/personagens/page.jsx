@@ -8,7 +8,7 @@ import CharacterModal from "../../components/CharacterModal";
 
 export default function Personagens() {
   const [personagens, setPersonagens] = useState([]);
-  const [personagenmSelecionado, setPersonagemSelecionado] = useState(null);
+  const [personagemSelecionado, setPersonagemSelecionado] = useState(null);
   const [favoritos, setFavoritos] = useState([]);
   const [loading, setLoading] = useState(true);
   const [erro, setErro] = useState("");
