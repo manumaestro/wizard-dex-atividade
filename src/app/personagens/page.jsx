@@ -1,10 +1,16 @@
 "use client";
 
 import { useEffect, useState } from "react";
+
 import axios from "axios";
+
 import { toast } from "react-toastify";
+
 import CharacterCard from "../../components/CharacterCard";
+
 import CharacterModal from "../../components/CharacterModal";
+
+const API_URL = "https://hp-api.onrender.com/api/characters";
 
 export default function Personagens() {
   const [personagens, setPersonagens] = useState([]);
