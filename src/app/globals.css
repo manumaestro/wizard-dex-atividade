@@ -11,6 +11,17 @@
     --border: rgba(217, 180, 92, 0.2);
 }
 
+[data-theme="light"] {
+    --background: #f5f2ea;
+    --surface: #ffffff;
+    --surface-light: #eee9dc;
+    --gold: #9a741d;
+    --gold-light: #b58a28;
+    --text: #25231e;
+    --muted: #68645b;
+    --border: rgba(154, 116, 29, 0.22);
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -53,6 +64,11 @@ a {
     backdrop-filter: blur(20px);
     background: rgba(8, 11, 22, .85);
     border-bottom: 1px solid var(--border);
+    transition: background .3s ease, border-color .3s ease;
+}
+
+[data-theme="light"] .navbar {
+    background: rgba(245, 242, 234, .88);
 }
 
 .nav-container {
@@ -110,6 +126,63 @@ a {
     background: rgba(217, 180, 92, .08);
 }
 
+.theme-button {
+    width: 50px;
+    height: 30px;
+    margin-left: 8px;
+    padding: 0;
+    border: 1px solid var(--border);
+    border-radius: 30px;
+    background: var(--surface-light);
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: .3s ease;
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, .15);
+}
+
+.theme-button::before {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    left: 3px;
+    border-radius: 50%;
+    background: var(--gold-light);
+    transition: .3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .25);
+}
+
+.theme-button:hover {
+    transform: scale(1.08);
+    border-color: var(--gold);
+}
+
+.theme-button:active {
+    transform: scale(.95);
+}
+
+[data-theme="light"] .theme-button::before {
+    transform: translateX(20px);
+}
+
+.theme-icon {
+    position: relative;
+    z-index: 2;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    line-height: 1;
+    transition: .3s ease;
+}
+
+[data-theme="light"] .theme-icon {
+    transform: translateX(10px);
+}
 
 .hero,
 .home-section,
@@ -340,7 +413,7 @@ a {
 .character-image {
     height: 320px;
     position: relative;
-    background: #0b0e1b;
+    background: var(--background);
     overflow: hidden;
 }
 
@@ -477,7 +550,7 @@ a {
     overflow-y: auto;
     display: grid;
     grid-template-columns: 330px 1fr;
-    background: #101525;
+    background: var(--surface);
     border: 1px solid var(--border);
     border-radius: 24px;
     position: relative;
@@ -504,8 +577,10 @@ a {
     background: #090c17;
 }
 
-.modal-image img {
-    object-fit: cover;
+.modal-image {
+    position: relative;
+    min-height: 500px;
+    background: var(--background);
 }
 
 .modal-content {
